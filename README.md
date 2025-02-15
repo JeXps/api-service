@@ -186,16 +186,14 @@ chmod -R 777 storage bootstrap/cache
 
 🔴 Problema: Git mostraba el error "Identidad del autor desconocida"
 
-✅ Solución: Configuré mi usuario y correo en Git:
-
-git config --global user.name "JeXps"
-git config --global user.email "jexps@example.com"
+✅ Solución: 
 
     Intenté hacer git push, pero falló por credenciales.
-    ✅ Solución: Configuré SSH en GitHub y lo subí correctamente con:
-
-    git remote set-url origin git@github.com:JeXps/api-service.git
-    git push -u origin main
+    ✅ Solucion 
+    En lugar de ingresar usuario y contraseña, se utilizó GitHub CLI para autenticarse correctamente:
+    gh auth login
+    Este comando permite iniciar sesión en GitHub desde la terminal y enlazar la cuenta correctamente.
+    Tras autenticarse, el comando git push -u origin main funcionó sin problemas.
 
 6. Pruebas con Postman y Exportación del Archivo JSON
 
