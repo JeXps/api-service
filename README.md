@@ -271,15 +271,6 @@ git config --global user.name "JeXps"
 git config --global user.email "jexps@example.com"
 ```
 
-2. Intenté hacer `git push`, pero falló por credenciales.  
-   **✅ Solución:** Configuré SSH en GitHub y lo subí correctamente con:
-   ```bash
-git remote set-url origin git@github.com:JeXps/api-service.git
-git push -u origin main
-   ```
-
----
-
 ## **6. Pruebas con Postman y Exportación del Archivo JSON**
 1. Probé la API en **Postman**, enviando peticiones a:
    ```
@@ -288,48 +279,10 @@ git push -u origin main
    PUT http://localhost/api/products/{id}
    DELETE http://localhost/api/products/{id}
    ```
-
 2. Exporté la colección en un archivo JSON:
-   - Fui a **Collections** en Postman.
+---
+ - Fui a **Collections** en Postman.
    - Seleccioné mi colección y la exporté en formato **v2.1**.
    - Guardé el archivo `api-service.postman_collection.json` para incluirlo en la entrega.
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
