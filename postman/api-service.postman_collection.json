@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "23725842-e40e-4bbc-bf6f-9545bd1c0bb3",
+		"name": "api-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42360254"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/categories",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/categories",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/categories",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
