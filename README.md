@@ -44,7 +44,7 @@ DB_PASSWORD=secret
 ```
 
 #### 📸 Capturas de configuración PostgreSQL
-![Captura de la configuracion postgreSQL](screenshots/Configuracion-PostgreSQL.png)
+![Captura de la configuracion postgreSQL](screenshots/ConfiguracionPostgreSQL.png)
 
 ### 3️⃣ Creación de Modelos, Migraciones y Controladores
 ```bash
