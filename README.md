@@ -44,7 +44,7 @@ DB_PASSWORD=secret
 ```
 
 #### 📸 Capturas de configuración PostgreSQL
-*(Agregar imágenes de la configuración aquí)*
+![Captura de la configuracion postgreSQL](screenshots/Configuracion-PostgreSQL.png)
 
 ### 3️⃣ Creación de Modelos, Migraciones y Controladores
 ```bash
@@ -65,12 +65,18 @@ Se crearon y probaron los **endpoints** con **Postman**, y se exportó la colecc
 4. Guardar el archivo como **api-service.postman_collection.json**.
 
 #### 📸 Capturas de pruebas en Postman
-*(Agregar imágenes de las pruebas aquí)*
+![Captura del programa Postman](screenshots/Postman.png)
+
 
 ### 5️⃣ Dockerización del Proyecto
 Se crearon los archivos **Dockerfile** y **docker-compose.yml**.
 
 #### 📌 Dockerfile
+#### 📸 Capturas de pruebas Dockerizacion
+![Captura de docker](screenshots/Dockerizacion-1.png)
+![Captura de docker](screenshots/Dockerizacion-2.png)
+
+
 ```Dockerfile
 FROM php:8.2-apache
 
