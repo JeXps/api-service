@@ -1,6 +1,6 @@
 <?php
-namespace App\Http\Controllers;
 
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Category;
@@ -20,10 +20,15 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $category = Category::create($request->validate([
+        // Validación de los datos de entrada
+        $validatedData = $request->validate([
             'name' => 'required|string|max:255'
-        ]));
+        ]);
 
+        // Crear la categoría con los datos validados
+        $category = Category::create($validatedData);
+
+        // Retornar la categoría recién creada
         return response()->json($category, 201);
     }
 
@@ -46,7 +51,8 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
+        // Validación de los datos de entrada
+        $validatedData = $request->validate([
             'name' => 'required|string|max:255',
         ]);
 
@@ -56,9 +62,8 @@ class CategoryController extends Controller
             return response()->json(['error' => 'Categoría no encontrada'], 404);
         }
 
-        $category->update([
-            'name' => $request->name,
-        ]);
+        // Actualizar la categoría con los datos validados
+        $category->update($validatedData);
 
         return response()->json($category);
     }
@@ -79,4 +84,5 @@ class CategoryController extends Controller
         return response()->json(['message' => 'Categoría eliminada correctamente']);
     }
 }
+
 
